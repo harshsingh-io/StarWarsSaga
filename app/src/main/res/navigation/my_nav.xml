@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.codeenemy.assignmentapp.ui.CharactersFragment"
+        android:label=""
+        tools:layout="@layout/fragment_characters">
+        <action
+            android:id="@+id/action_charactersFragment_to_charactersDetailsFragment"
+            app:destination="@id/charactersDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/charactersDetailsFragment"
+        android:name="com.codeenemy.assignmentapp.ui.CharactersDetailsFragment"
+        android:label="Character Details"
+        tools:layout="@layout/fragment_characters_details">
+        <argument
+            android:name="characterDetails"
+            app:argType="com.codeenemy.assignmentapp.models.Character" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.codeenemy.assignmentapp.ui.SplashFragment"
+        android:label=""
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_charactersFragment"
+            app:destination="@id/charactersFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
