@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
-    android:focusable="true"
-    app:cardBackgroundColor="@android:color/transparent"
-    app:cardCornerRadius="15dp"
-    app:cardElevation="8dp">
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <!-- Card View -->
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@android:color/transparent"
         android:elevation="8dp">
 
         <!-- Vertical LinearLayout for Column -->
@@ -24,33 +21,21 @@
 
             <!-- Displaying key character information -->
             <TextView
-                android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name: "
-                android:textSize="20sp"
-                android:textColor="@color/white"
                 android:textStyle="bold"/>
             <TextView
-                android:id="@+id/tvGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-
                 android:text="Gender: "/>
             <TextView
-                android:id="@+id/tvDob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-
                 android:text="Birth Year: "/>
             <TextView
-                android:id="@+id/tvHeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-
                 android:text="Height: "/>
 
             <!-- Spacer -->
@@ -60,12 +45,11 @@
 
             <!-- Clickable Text -->
             <TextView
-                android:id="@+id/tvcDetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Click for details"
-                android:textColor="@color/light_gray"
+                android:textColor="#0000FF"
                 android:textStyle="bold"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

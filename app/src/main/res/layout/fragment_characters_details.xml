@@ -347,7 +347,6 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/textView34"
                     app:layout_constraintTop_toBottomOf="@+id/textView34"
-                    app:spanCount="4"
                     tools:listitem="@layout/film_row" />
 
                 <ProgressBar

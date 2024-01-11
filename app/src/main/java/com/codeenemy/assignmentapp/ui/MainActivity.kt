@@ -1,6 +1,5 @@
 package com.codeenemy.assignmentapp.ui
 
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
@@ -12,7 +11,9 @@ import com.codeenemy.assignmentapp.R
 import com.codeenemy.assignmentapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-
+/**
+ * [MainActivity] is the main entry point for the application.
+ */
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
@@ -25,22 +26,25 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Find the NavHostFragment and NavController
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHostFragment.findNavController()
 
-        //Setup Top Back post_style_button and hide the arrow for some fragments
+        // Setup Top Back button and hide the arrow for some fragments
         appBarConfiguration = AppBarConfiguration
             .Builder(
                 R.id.charactersFragment,
                 R.id.splashFragment
             ).build()
 
+        // Set up the ActionBar and connect it to the NavController
         setSupportActionBar(binding.toolbarMain)
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {
+        // Navigate up in the hierarchy or handle the action as needed
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }

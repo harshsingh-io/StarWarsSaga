@@ -9,6 +9,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.codeenemy.assignmentapp.R
 
+/**
+ * [SplashFragment] is a fragment displaying a splash screen while navigating to the characters list.
+ */
 class SplashFragment : Fragment() {
 
     override fun onCreateView(
@@ -17,6 +20,7 @@ class SplashFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
+        // Use a Handler to delay navigation to the characters list after 3 seconds
         Handler().postDelayed(Runnable {
             findNavController().navigate(R.id.action_splashFragment_to_charactersFragment)
         }, 3000)
