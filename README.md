@@ -24,7 +24,13 @@ An Android app built with Kotlin, consuming [StarWars API](https://swapi.dev/) t
 - [SavedStateHandle](https://developer.android.com/guide/navigation/navigation-programmatic) - Getting results from a destination when navigating from one fragment to another
 - [SafeApiCall](https://github.com/harshsingh-io/StarWarsSaga/blob/main/app/src/main/java/com/codeenemy/assignmentapp/network/SafeApiCall.kt) Making safe API calls
  
-## Demo
+<h2>🚀 Demo</h2>
+
+<img src="https://github.com/harshsingh-io/StarWarsSaga/blob/main/demoscreen.gif" alt="project-screenshot" width="180" height="400">
+
+<h2>Project Screenshots:</h2>
+
+<img src="https://github.com/harshsingh-io/StarWarsSaga/blob/main/Screenshot_20240112-002139577.jpg" alt="project-screenshot" width="180" height="400"> <img src="https://github.com/harshsingh-io/StarWarsSaga/blob/main/Screenshot_20240112-002157706.jpg" alt="project-screenshot" width="180" height="400"> <img src="https://github.com/harshsingh-io/StarWarsSaga/blob/main/Screenshot_20240112-002217888.jpg" alt="project-screenshot" width="180" height="400"> <img src="https://github.com/harshsingh-io/StarWarsSaga/blob/main/Screenshot_20240112-002227577.jpg" alt="project-screenshot" width="180" height="400"> 
 
 ## File Structure MVVM
 
