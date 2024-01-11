@@ -26,7 +26,7 @@ An Android app built with Kotlin, consuming [StarWars API](https://swapi.dev/) t
  
 <h2>🚀 Demo</h2>
 
-<img src="https://github.com/harshsingh-io/StarWarsSaga/blob/main/demoscreen.gif" alt="project-screenshot" width="180" height="400">
+<img src="https://github.com/harshsingh-io/StarWarsSaga/blob/main/demoscreen.gif" alt="project-screenshot" width="180" height="320">
 
 <h2>Project Screenshots:</h2>
 
